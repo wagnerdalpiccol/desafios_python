@@ -9,9 +9,9 @@ while True:
             x.append(entrada.split())
     except EOFError:
         break
-for assassino, vítima in x:
+for assassino, vitima in x:
     assassinatos[assassino] += 1
-    vitimas.add(vítima)
+    vitimas.add(vitima)
 resultado = [
     (nome, contador) for nome, contador in assassinatos.items() if nome not in vitimas
 ]
